@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="transfer_button">تحويل مبلغ</string>
+    <string name="receive_button">استلام مبلغ</string>
+    <string name="admin_button">الإدارة</string>
+    <string name="transfer">تحويل</string>
+    <string name="receive">استلام</string>
+    <string name="first_name">الاسم</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="expiration_date">تاريخ الانتهاء (MM/YY)</string>
+    <string name="cvv">رقم CVV</string>
+    <string name="receipt_code">كود الاستلام</string>
+    <string name="paypal">PayPal</string>
+    <string name="vodafone_cash">Vodafone Cash</string>
+    <string name="credit_card">بطاقة ائتمان</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="password">كلمة المرور</string>
+</resources>
