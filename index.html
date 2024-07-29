@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحميل تطبيق H-S</title>
+    <title>Download My App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .btn-download {
             display: inline-block;
-            font-size: 16px;
-            margin: 20px 10px;
-            cursor: pointer;
-            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
             border-radius: 5px;
+            margin: 10px;
+        }
+        .btn-download:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>تحميل تطبيق H-S</h1>
-    <p>انقر على الزر أدناه لتحميل التطبيق وتثبيته على جهازك:</p>
-    <a href="https://example.com/app.apk" download>
-        <button>تحميل التطبيق</button>
-    </a>
-    <p>يرجى التأكد من تفعيل خيار "تثبيت التطبيقات من مصادر غير معروفة" في إعدادات جهازك.</p>
+    <div class="container">
+        <h1>Download Our App</h1>
+        <p>Click the button below to download the latest version of our app:</p>
+        <a href="path/to/your/app.apk" class="btn-download">Download App</a>
+    </div>
 </body>
 </html>
