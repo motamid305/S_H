@@ -1,4 +1,4 @@
-name: Android CI
+name: Build and Test Android
 
 on:
   push:
@@ -13,20 +13,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up JDK 11
+    - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        distribution: 'adopt' # أو 'zulu' أو أي توزيع آخر تفضله
-        java-version: '11'
+        java-version: '11'  # تعيين إصدار Java إلى 11
+        distribution: 'zulu'  # تحديد التوزيع المناسب لـ Java
 
     - name: Build with Gradle
       run: ./gradlew build
-
-    - name: Upload APK
-      uses: actions/upload-artifact@v2
-      with:
-        name: app-release.apk
-        path: app/build/outputs/apk/release/app-release.apk
